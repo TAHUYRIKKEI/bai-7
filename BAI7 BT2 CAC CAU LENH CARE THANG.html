@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="month" type="text"><button onclick="tinhsongay()">tinh so ngay</button>
+<h1 id="ketqua"></h1>
+<script>
+  function  tinhsongay() {
+    let month= + document.getElementById('month').value;
+    console.log('tinh so ngay===',month)
+    switch (month) {
+      case1:
+      case2:
+      case3:
+      case4:
+      case5:
+      case6:
+      case7:
+      case8:
+      case9:
+      case10:
+      case12:
+      document.getElementById('ketqua') .innerHTML ='thamg' + month + 'cos 31 ngay'
+            break;
+      case2:
+      document.getElementById('ketqua').innerHTML = 'thang' + month + 'co 28 hoac 29 ngay'
+            break;
+      case4:
+      case6:
+      case9:
+      case11:
+      document.getElementById('ketqua').innerHTML= 'thang' + month + 'thang nay co 30 ngay'
+      break;
+      default:
+      document.getElementById('ketqua').innerHTML='thang' + 'ko co thang nay'
+    }
+  }
+</script>
+
+</body>
+</html>
